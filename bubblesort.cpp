@@ -1,19 +1,12 @@
-
-edit
-play_arrow
-
-brightness_4
 // C++ program for implementation of Bubble sort  
 #include <bits/stdc++.h> 
 using namespace std; 
-  
 void swap(int *xp, int *yp)  
 {  
     int temp = *xp;  
     *xp = *yp;  
     *yp = temp;  
 }  
-  
 // A function to implement bubble sort  
 void bubbleSort(int arr[], int n)  
 {  
@@ -24,8 +17,7 @@ void bubbleSort(int arr[], int n)
     for (j = 0; j < n-i-1; j++)  
         if (arr[j] > arr[j+1])  
             swap(&arr[j], &arr[j+1]);  
-}  
-  
+}    
 /* Function to print an array */
 void printArray(int arr[], int size)  
 {  
@@ -33,8 +25,7 @@ void printArray(int arr[], int size)
     for (i = 0; i < size; i++)  
         cout << arr[i] << " ";  
     cout << endl;  
-}  
-  
+}    
 // Driver code  
 int main()  
 {  
@@ -45,5 +36,4 @@ int main()
     printArray(arr, n);  
     return 0;  
 }  
-  
-// This code is contributed by rathbhupendra 
+
